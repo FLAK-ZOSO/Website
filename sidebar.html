@@ -1,0 +1,30 @@
+<!-- Style -->
+<link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Script -->
+<script type="text/javascript" src="Sidebar.js"></script>
+<script type="text/javascript" src="Div.js"></script>
+<script type="text/javascript" src="Dropdown.js"></script>
+
+<!-- Template sidebar -->
+<div id="sidebar" class="sidenav">
+    <!-- Crocetta per chiudere -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeBar('sidebar', 'intro'); hide('sidebar')"><p class="cross">&times;</p></a><br>
+
+    <!-- Pagine interne -->
+    <button class="dropdown-btn" onclick="gruppo('contenitore1');">Internal Pages<i class="fa fa-caret-down"></i></button>
+    <div id="contenitore1" class="dropdown-container">
+        <ul style="color: lime;">
+            <li><a href="FLAK-ZOSO.html" target="_blank">Main page</a></li>
+        </ul>
+    </div>
+    <!-- Social -->
+    <button class="dropdown-btn" onclick="gruppo('contenitore2');">Social<i class="fa fa-caret-down"></i></button>
+    <div id="contenitore2" class="dropdown-container">
+        <ul style="color: lime;">
+            <li><a href="Contattaci-email.html" target="_blank">E-mail</a></li>
+            <li><a href="https://discord.com/channels/@me/797844636281995274" target="_blank">Discord</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="author" content="FLAK-ZOSO">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Main page, mobile version">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- TITLE -->
+        <title>FLAK-ZOSO</title>
+
+        <!-- ICONS -->
+        <link rel="icon" type="ico" sizes="32x32" href="favicon.ico">
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="paragraph.css">
+    </head>
+    <body style="background-color: orangered;">
+        <div class="intro">
+            <p>You have been...</p>
+            <h1>REDIRECTED</h1>
+            <p>...because your device's width isn't enough.</p><hr>
+
+            <p>But if you are surfing the net by computer...</p>
+            <p>...you can simply resize your window...</p>
+            <p>...and you will be...</p>
+            <h1>REDIRECTED</h1>
+        </div>
+
+        <script>
+            function checkWidth() {
+                if (window.screen.width > 600)
+                    window.location = 'FLAK-ZOSO.html';
+            }
+            window.addEventListener('load', checkWidth);
+            window.addEventListener('resize', checkWidth);
+        </script>
+    </body>
+</html>
